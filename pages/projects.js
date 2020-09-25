@@ -13,7 +13,7 @@ export default function Projects() {
         <h1>My Projects</h1>
       </div>
 
-      <Card title="BattPack">Track your batteries with style.</Card>
+      <Card title="BattPack">Track your batteries with style with BattPack. BattPack features charge cycle tracking, discharge reminder notificaitons, and a notes section for each battery, so you never lose track of your rechargable batteries again.</Card>
     </Layout>
   );
 }
