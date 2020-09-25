@@ -7,3 +7,82 @@
 .main h1 {
   font-size: 3rem;
 }
+
+.card {
+  max-width: 750px;
+  min-height: 10px;
+
+  background: rgba(255, 89, 186, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(255, 89, 186, 1) 0%,
+    rgba(240, 147, 93, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(255, 89, 186, 1)),
+    color-stop(100%, rgba(240, 147, 93, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 89, 186, 1) 0%,
+    rgba(240, 147, 93, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(255, 89, 186, 1) 0%,
+    rgba(240, 147, 93, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(255, 89, 186, 1) 0%,
+    rgba(240, 147, 93, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(255, 89, 186, 1) 0%,
+    rgba(240, 147, 93, 1) 100%
+  );
+
+  border-radius: 20px;
+  border: 1px solid #ffffff00;
+  margin: 0 auto;
+  box-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
+    0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
+    0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 17.7px 14.2px rgba(0, 0, 0, 0.039), 0 25.1px 20.1px rgba(0, 0, 0, 0.043),
+    0 36.5px 29.2px rgba(0, 0, 0, 0.048), 0 56.3px 45px rgba(0, 0, 0, 0.055),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  transition: 0.1s ease-in-out;
+}
+
+.card:hover {
+  scale: 104%;
+  transition: 0.1s ease-in-out;
+}
+
+.title {
+  margin-left: 25px;
+  margin-top: 15px;
+  color: white;
+  text-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
+    0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
+    0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 17.7px 14.2px rgba(0, 0, 0, 0.039), 0 25.1px 20.1px rgba(0, 0, 0, 0.043),
+    0 36.5px 29.2px rgba(0, 0, 0, 0.048), 0 56.3px 45px rgba(0, 0, 0, 0.055),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.description {
+  margin-left: 25px;
+  margin-top: -15px;
+  font-size: 120%;
+  color: white;
+  text-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
+    0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
+    0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 17.7px 14.2px rgba(0, 0, 0, 0.039), 0 25.1px 20.1px rgba(0, 0, 0, 0.043),
+    0 36.5px 29.2px rgba(0, 0, 0, 0.048), 0 56.3px 45px rgba(0, 0, 0, 0.055),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
