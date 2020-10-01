@@ -27,10 +27,10 @@ export default function Projects() {
   );
 }
 
-function Card({ title, children }) {
+function Card({ title, link, children }) {
   return (
     <div className={styles.card}>
-      <Link href="https://apps.apple.com/us/app/battpack/id1522165410">
+      <Link href={link}>
         <a>
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{children}</p>

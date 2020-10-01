@@ -9,7 +9,7 @@
 }
 
 .card {
-  max-width: 75vw;
+  max-width: min(85vw, 750px);
   min-height: 10px;
 
   background: rgba(255, 89, 186, 1);
