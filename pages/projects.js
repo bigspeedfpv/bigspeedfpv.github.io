@@ -16,7 +16,7 @@ export default function Projects() {
 
       <Card
         title="BattPack"
-        link="https://apps.apple.com/us/app/battpack/id1522165410"
+        link="https://testflight.apple.com/join/d2EnvORF"
       >
         Track your batteries with style with BattPack. BattPack features charge
         cycle tracking, discharge reminder notificaitons, and a notes section
