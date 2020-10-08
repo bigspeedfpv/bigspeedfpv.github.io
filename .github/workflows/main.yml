@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Install Surge
-        run: npm install -g surge
+        run: npm install surge
 
       - name: Publish to Surge
-        run: surge ./out ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: node-modules/bin/surge ./out ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
