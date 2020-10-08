@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "next": "9.5.3",
+    "next": "9.5.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "typography": "^0.16.19"
