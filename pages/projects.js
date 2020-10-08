@@ -1,7 +1,7 @@
-import Head from "next/head";
-import styles from "../styles/Projects.module.css";
-import Layout from "../components/layout";
-import Link from "next/link"
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/Projects.module.css';
+import Layout from '../components/layout';
 
 export default function Projects() {
   return (
