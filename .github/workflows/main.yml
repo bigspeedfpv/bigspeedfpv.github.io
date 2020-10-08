@@ -29,8 +29,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
-      - name: Install Surge
-        run: npm install surge
-
-      - name: Publish to Surge
-        run: node-modules/bin/surge ./out ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - name: Install Surge and deploy
+        uses: actions/setup-node@v1
+        with:
+          node-version: 8
+        - run: npm install surge
+        - run: node-modules/bin/surge ./out ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
