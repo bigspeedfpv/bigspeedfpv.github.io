@@ -40,7 +40,7 @@
   border-radius: 5rem;
   border-style: outset;
   border: 0.5rem solid;
-  border-image: linear-gradient(to top right, #1e9df3, #14dbe8);
+  border-color: white;
   box-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
     0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
     0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
