@@ -32,30 +32,12 @@
   font-size: 1.5rem;
 }
 
-.profile_border {
-  margin: 0 auto;
-  height: 12rem;
-  width: 12rem;
+.profile {
   margin-top: -3rem;
   margin-bottom: 2rem;
-  border-radius: 6rem;
-  box-shadow: 0 1.4px 3.6px rgba(255, 109, 1, 0.024),
-    0 3.8px 10px rgba(255, 109, 1, 0.035), 0 9px 24.1px rgba(255, 109, 1, 0.046),
-    0 30px 80px rgba(255, 109, 1, 0.07);
-  background: #f90392;
-  background: -webkit-linear-gradient(bottom left, #f90392, #ff6d01);
-  background: -moz-linear-gradient(bottom left, #f90392, #ff6d01);
-  background: linear-gradient(to top right, #f90392, #ff6d01);
-}
-
-.profile {
-  position: absolute;
   height: 10rem;
   z-index: 1;
   border-radius: 5rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  /*
   border-style: outset;
   border: 0.5rem solid;
   border-image: linear-gradient(to top right, #1e9df3, #14dbe8);
@@ -65,5 +47,4 @@
     0 17.7px 14.2px rgba(0, 0, 0, 0.039), 0 25.1px 20.1px rgba(0, 0, 0, 0.043),
     0 36.5px 29.2px rgba(0, 0, 0, 0.048), 0 56.3px 45px rgba(0, 0, 0, 0.055),
     0 100px 80px rgba(0, 0, 0, 0.07);
-    */
 }
