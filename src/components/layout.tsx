@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         </HeaderContainer>
       </Navbar>
 
-      <BackgroundImage src="quad.jpg" />
+      <BackgroundImage src="background.jpg" />
 
       <IntroContainer>
         <Profile src="me.jpg" />

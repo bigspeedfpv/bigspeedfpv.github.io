@@ -65,6 +65,10 @@ export const IntroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const BackgroundImage = styled.img`
@@ -77,7 +81,7 @@ export const BackgroundImage = styled.img`
   top: 0;
   z-index: -10;
 
-  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeGaussianBlur stdDeviation='7.5' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E%3C/svg%3E#a");
+  transform: scale(1.1);
 `
 
 export const Profile = styled.img`
