@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   
   React.useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 100;
+      const isScrolled = window.scrollY > window.innerHeight / 5 * 3;
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled);
       }
@@ -37,6 +37,8 @@ const Layout = ({ children }) => {
         <Profile src="me.jpg" />
         <Title>bigspeed</Title>
       </IntroContainer>
+
+      { children }
     </>
   )
 }

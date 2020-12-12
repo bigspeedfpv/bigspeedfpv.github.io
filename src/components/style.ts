@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components"
 
 export const Navbar = styled.div`
-  ${(scrolled) => css`
-    opacity: ${scrolled ? 0 : 1};
+  ${({ scrolled }: { scrolled: boolean }) => css`
+    opacity: ${scrolled ? 1 : 0};
   `};
+
+  transition: opacity 0.15s;
 `
 
 export const HeaderContainer = styled.div`
@@ -23,7 +25,7 @@ export const TranslucentBG = styled.div`
   height: 65px;
 
   background-color: white;
-  opacity: 75%;
+  opacity: 65%;
 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(25px);
@@ -38,9 +40,9 @@ export const ProfileImage = styled.img`
   border: 5px solid white;
   border-radius: 100%;
 
-  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
 
   height: 50px;
   width: 50px;
@@ -76,12 +78,10 @@ export const BackgroundImage = styled.img`
   height: 100vh;
   object-fit: cover;
 
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: -10;
-
-  transform: scale(1.1);
 `
 
 export const Profile = styled.img`
@@ -104,4 +104,8 @@ export const Title = styled.span`
   margin-left: 25px;
   
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.45);
+
+  @media (max-width: 768px) {
+    margin-left: 0px;
+  }
 `
