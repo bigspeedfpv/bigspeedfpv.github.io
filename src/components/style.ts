@@ -100,8 +100,6 @@ export const Title = styled.span`
   font-size: 65px;
   font-weight: 700;
   color: white;
-
-  margin-left: 25px;
   
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.45);
 `
