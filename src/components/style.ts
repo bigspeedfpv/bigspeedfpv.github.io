@@ -11,29 +11,21 @@ export const Navbar = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   height: 65px;
+  width: 100%;
   
   align-items: center;
   
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 2
-`
+  z-index: 2;
+  
+  background-color: rgba(255, 255, 255, 0.7);
 
-export const TranslucentBG = styled.div`
-  width: 100%;
-  height: 65px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
-  background-color: white;
-  opacity: 65%;
-
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(25px);
-
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 1
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2)
 `
 
 export const ProfileImage = styled.img`
@@ -42,7 +34,6 @@ export const ProfileImage = styled.img`
 
   box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
 
   height: 50px;
   width: 50px;
@@ -78,7 +69,7 @@ export const BackgroundImage = styled.img`
   height: 100vh;
   object-fit: cover;
 
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: -10;
@@ -93,7 +84,6 @@ export const Profile = styled.img`
 
   box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.5);
 `
 
 export const Title = styled.span`

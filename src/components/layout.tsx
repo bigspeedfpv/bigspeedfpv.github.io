@@ -1,13 +1,15 @@
 import React from "react"
 
-import { Navbar, HeaderContainer, TranslucentBG, ProfileImage, HeaderTitle, IntroContainer, BackgroundImage, Profile, Title } from "./style"
+import { Navbar, HeaderContainer, ProfileImage, HeaderTitle, IntroContainer, BackgroundImage, Profile, Title } from "./style"
+
+import BattPack from "./BattPack"
 
 const Layout = ({ children }) => {
   const [scrolled, setScrolled] = React.useState(false)
   
   React.useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > window.innerHeight / 5 * 3;
+      const isScrolled = window.scrollY > window.innerHeight / 5 * 3 - 20;
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled);
       }
@@ -24,7 +26,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar scrolled={scrolled} >
-        <TranslucentBG />
         <HeaderContainer>
           <ProfileImage src="me.jpg" />
           <HeaderTitle>bigspeed</HeaderTitle>
@@ -38,6 +39,7 @@ const Layout = ({ children }) => {
         <Title>bigspeed</Title>
       </IntroContainer>
 
+      <BattPack />
       { children }
     </>
   )
