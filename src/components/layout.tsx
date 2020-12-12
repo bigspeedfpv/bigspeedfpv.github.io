@@ -1,8 +1,9 @@
 import React from "react"
 
-import { Navbar, HeaderContainer, ProfileImage, HeaderTitle, IntroContainer, BackgroundImage, Profile, Title } from "./style"
+import { HeaderContainer, ProfileImage, HeaderTitle, IntroContainer, BackgroundImage, Arrow, Profile, Title } from "./style"
 
 import BattPack from "./BattPack"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const [scrolled, setScrolled] = React.useState(false)
@@ -25,14 +26,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar scrolled={scrolled} >
-        <HeaderContainer>
-          <ProfileImage src="me.jpg" />
-          <HeaderTitle>bigspeed</HeaderTitle>
-        </HeaderContainer>
-      </Navbar>
+      <HeaderContainer scrolled={scrolled}>
+        <ProfileImage src="me.jpg" />
+        <HeaderTitle>bigspeed</HeaderTitle>
+      </HeaderContainer>
 
       <BackgroundImage src="background.jpg" />
+
+      <Arrow />
 
       <IntroContainer>
         <Profile src="me.jpg" />
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
       </IntroContainer>
 
       <BattPack />
+      <Footer />
       { children }
     </>
   )
