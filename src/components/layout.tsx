@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <HeaderContainer scrolled={scrolled}>
-        <ProfileImage src="me.jpg" />
+        <ProfileImage src="me.jpg" alt="Profile Picture" />
         <HeaderTitle>bigspeed</HeaderTitle>
       </HeaderContainer>
 
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
       <Arrow />
 
       <IntroContainer>
-        <Profile src="me.jpg" />
+        <Profile src="me.jpg" alt="Profile Picture" />
         <Title>bigspeed</Title>
       </IntroContainer>
 
