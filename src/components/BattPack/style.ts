@@ -22,7 +22,6 @@ export const ComingSoon = styled.button`
   height: 50px;
 
   font-size: 22px;
-  font-weight: 600;
 
   border-radius: 15px;
   border: none;
