@@ -12,10 +12,10 @@ export const Container = styled.div`
 `
 
 export const Copyright = styled.span`
-  color: #777777;
+  color: #444444;
   font-size: 20px;
 `
 
 export const Github = styled.a`
-  color: #777777;
+  color: #444444;
 `
