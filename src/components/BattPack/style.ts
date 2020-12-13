@@ -26,17 +26,17 @@ export const ComingSoon = styled.button`
   border-radius: 15px;
   border: none;
 
-  background-color: #cccccc;
+  background-color: rgba(151, 177, 219, 1);
   color: white;
 
-  -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.15); 
-  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(151,177,219,0.4); 
+  box-shadow: 0px 6px 12px 0px rgba(151,177,219,0.4);
 `
 
 export const Details = styled.div`
   display: flex;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   flex-direction: row;
 

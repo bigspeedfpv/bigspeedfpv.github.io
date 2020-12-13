@@ -48,11 +48,14 @@ export const HeaderTitle = styled.span`
 `
 
 export const IntroContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  postion: fixed;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: -40px;
+  margin: 0;
+  
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;

@@ -31,7 +31,10 @@ const Layout = ({ children }) => {
         <HeaderTitle>bigspeed</HeaderTitle>
       </HeaderContainer>
 
-      <BackgroundImage src="background.jpg" />
+      <picture>
+        <source type="image/webp" srcset="background.webp" />
+        <BackgroundImage src="background.png" alt="Website Background" />
+      </picture>
 
       <Arrow />
 
