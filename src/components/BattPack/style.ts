@@ -26,11 +26,11 @@ export const ComingSoon = styled.button`
   border-radius: 15px;
   border: none;
 
-  background-color: rgba(151, 177, 219, 1);
+  background-color: rgba(35, 137, 247, 1);
   color: white;
 
-  -webkit-box-shadow: 0px 6px 12px 0px rgba(151,177,219,0.4); 
-  box-shadow: 0px 6px 12px 0px rgba(151,177,219,0.4);
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(35,137,247,0.4); 
+  box-shadow: 0px 6px 20px 0px rgba(35,137,247,0.4);
 `
 
 export const Details = styled.div`
