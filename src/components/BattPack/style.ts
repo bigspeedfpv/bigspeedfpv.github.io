@@ -21,7 +21,8 @@ export const ComingSoon = styled.button`
   max-width: 200px;
   height: 50px;
 
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
 
   border-radius: 15px;
   border: none;
