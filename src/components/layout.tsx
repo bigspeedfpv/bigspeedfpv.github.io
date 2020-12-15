@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <HeaderContainer scrolled={scrolled}>
-        <ProfileImage src="https://github.com/bigspeedfpv.png" alt="Profile Picture" />
+        <ProfileImage src="https://github.com/bigspeedfpv.png?size=50" alt="Profile Picture" />
         <HeaderTitle>bigspeed</HeaderTitle>
       </HeaderContainer>
 
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
       <Arrow />
 
       <IntroContainer>
-        <Profile src="https://github.com/bigspeedfpv.png" alt="Profile Picture" />
+        <Profile src="https://github.com/bigspeedfpv.png?size=150" alt="Profile Picture" />
         <Title>bigspeed</Title>
       </IntroContainer>
 
