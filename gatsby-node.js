@@ -1,7 +1,26 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const axios = require("axios")
 
-// You can delete this file if you're not using it
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  const { createNode } = actions
+
+  var b64 = ""
+  
+  axios
+    .get("https://github.com/bigspeedfpv.png", {
+      responseType: 'arraybuffer'
+    })
+    .then(response => {
+      b64 = Buffer.from(response.data, 'binary').toString('base64')
+
+      const node = {
+        name: "Profile",
+        id: createNodeId(`Profile`),
+        data: b64,
+        internal: {
+          type: "Profile",
+          contentDigest: createContentDigest(b64)
+        }
+      }
+      actions.createNode(node)
+    })
+}

@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import { HeaderContainer, ProfileImage, HeaderTitle, IntroContainer, BackgroundImage, Arrow, Profile, Title } from "./style"
 
@@ -6,6 +7,8 @@ import BattPack from "./BattPack"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(query)
+
   const [scrolled, setScrolled] = React.useState(false)
   
   React.useEffect(() => {
@@ -27,7 +30,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <HeaderContainer scrolled={scrolled}>
-        <ProfileImage src="https://github.com/bigspeedfpv.png?size=50" alt="Profile Picture" />
+        <ProfileImage src={"data:image/png;base64, " + data.allProfile.edges[0].node.data} alt="Profile Picture" />
         <HeaderTitle>bigspeed</HeaderTitle>
       </HeaderContainer>
 
@@ -39,7 +42,7 @@ const Layout = ({ children }) => {
       <Arrow />
 
       <IntroContainer>
-        <Profile src="https://github.com/bigspeedfpv.png?size=150" alt="Profile Picture" />
+        <Profile src={"data:image/png;base64, " + data.allProfile.edges[0].node.data} alt="Profile Picture" />
         <Title>bigspeed</Title>
       </IntroContainer>
 
@@ -51,3 +54,15 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+const query = graphql`
+  query ProfilePhoto {
+    allProfile {
+      edges {
+        node {
+          data
+        }
+      }
+    }
+  }
+`
