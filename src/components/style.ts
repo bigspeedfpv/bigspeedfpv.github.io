@@ -30,8 +30,7 @@ export const ProfileImage = styled.img`
   border: 5px solid white;
   border-radius: 100%;
 
-  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.15);
 
   height: 50px;
   width: 50px;
@@ -49,9 +48,9 @@ export const HeaderTitle = styled.span`
 
 export const IntroContainer = styled.div`
   width: 100%;
-  height: calc(100vh - 40px);
+  height: 100vh;
   left: 0px;
-  top: 0;
+  top: -40px;
   margin: 0;
   
   position: relative;

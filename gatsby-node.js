@@ -1,8 +1,6 @@
 const axios = require("axios")
 
 exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
-  const { createNode } = actions
-  
   const b64 = await axios
     .get("https://github.com/bigspeedfpv.png", {
       responseType: 'arraybuffer'
