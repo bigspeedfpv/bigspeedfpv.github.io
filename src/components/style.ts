@@ -27,10 +27,10 @@ export const HeaderContainer = styled.div`
 `
 
 export const ProfileImage = styled.img`
-  border: 5px solid white;
+  border: none;
   border-radius: 100%;
 
-  box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 
   height: 50px;
   width: 50px;
@@ -80,10 +80,9 @@ export const Profile = styled.img`
   height: 150px;
 
   border-radius: 100%;
-  border: 8px solid white;
+  border: none;
 
-  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.25);
 `
 
 export const Title = styled.span`
@@ -93,7 +92,7 @@ export const Title = styled.span`
 
   margin-left: 25px;
   
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.45);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 
   @media (max-width: 768px) {
     margin-left: 0px;
