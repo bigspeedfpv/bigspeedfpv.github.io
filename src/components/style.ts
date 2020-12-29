@@ -48,7 +48,7 @@ export const HeaderTitle = styled.span`
 
 export const IntroContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 40px);
   left: 0px;
   top: -40px;
   margin: 0;
