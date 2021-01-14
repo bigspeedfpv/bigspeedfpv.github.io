@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
 
       <picture>
         <source type="image/webp" srcSet="background.webp" />
-        <BackgroundImage src="background.png" alt="Website Background" />
+        <BackgroundImage src="background.jpg" alt="Website Background" />
       </picture>
 
       <Arrow />
