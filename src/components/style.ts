@@ -70,10 +70,9 @@ export const BackgroundImage = styled.img`
 
   filter: brightness(80%);
 
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
-  z-index: -10;
 `
 
 export const Profile = styled.img`
