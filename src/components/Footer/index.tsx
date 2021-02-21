@@ -5,7 +5,7 @@ import { Container, Copyright, Github } from "./style"
 const Footer = () => {
   return (
     <Container>
-      <Copyright>© 2020 Andrew Brower (<Github href="https://github.com/bigspeedfpv/website">Source</Github>)</Copyright>
+      <Copyright>© { new Date().getFullYear() } Andrew Brower (<Github href="https://github.com/bigspeedfpv/website">Source</Github>)</Copyright>
     </Container>
   )
 }
