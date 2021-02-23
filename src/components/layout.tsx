@@ -5,8 +5,6 @@ import { HeaderContainer, ProfileImage, HeaderTitle, IntroContainer, BackgroundI
 
 import BattPack from "./BattPack"
 import Footer from "./Footer"
-import Hamburger from "./Hamburger"
-import Sidebar from "./Sidebar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(query)
@@ -38,18 +36,9 @@ const Layout = ({ children }) => {
   const introRef = React.useRef(null)
   const battpackRef = React.useRef(null)
 
-  const scrollToHome = () => {
-    introRef.current.scrollIntoView()
-  }
-
-  const scrollToBattpack = () => {
-    battpackRef.current.scrollIntoView()
-  }
-
   return (
     <>
       <HeaderContainer scrolled={scrolled}>
-        <Hamburger active={menuActive} callback={toggleMenu} />
         <ProfileImage src={"data:image/png;base64, " + data.allProfile.edges[0].node.data} alt="Profile Picture" />
         <HeaderTitle>bigspeed</HeaderTitle>
       </HeaderContainer>
@@ -65,11 +54,6 @@ const Layout = ({ children }) => {
         <Profile src={"data:image/png;base64, " + data.allProfile.edges[0].node.data} alt="Profile Picture" />
         <Title>bigspeed</Title>
       </IntroContainer>
-
-      <Sidebar active={menuActive} scrolled={scrolled}>
-        <div onClick={scrollToHome}>Home</div>
-        <div onClick={scrollToBattpack}>BattPack</div>
-      </Sidebar>
 
       <BattPack innerRef={battpackRef} />
       <Footer />
