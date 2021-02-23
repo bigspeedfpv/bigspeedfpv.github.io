@@ -8,7 +8,7 @@ const Rat = () => {
   const ratGif = React.useRef()
 
   React.useEffect(() => {
-    if ((ratGif.current as any).loaded) setLoaded(true)
+    if ((ratGif.current as any).complete) setLoaded(true)
   })
   
   return (
