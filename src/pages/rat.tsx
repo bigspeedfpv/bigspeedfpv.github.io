@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 import { Background, Container, RateliusTitle } from "../styles/rat"
 
 const Rat = () => {
@@ -12,6 +13,7 @@ const Rat = () => {
   
   return (
     <>
+      <SEO title="Home of the Ratelius" />
       <Container>
         <Background src="/rat.gif" onLoad={() => setLoaded(true)} visible={loaded} ref={ratGif} />
       </Container>
