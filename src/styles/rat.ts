@@ -36,4 +36,6 @@ export const RateliusTitle = styled.span`
 
   font-weight: 700;
   letter-spacing: -0.1rem;
+
+  font: Inter var;
 `

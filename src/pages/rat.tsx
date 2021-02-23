@@ -7,7 +7,7 @@ const Rat = () => {
   return (
     <>
       <Container>
-        <Background src="rat.gif" onLoad={() => setLoaded(true)} visible={loaded} />
+        <Background src="/rat.gif" onLoad={() => setLoaded(true)} visible={loaded} />
       </Container>
       <Container>
         <RateliusTitle>my boy ratelius is an absolute unit so he takes a sec to load</RateliusTitle>
