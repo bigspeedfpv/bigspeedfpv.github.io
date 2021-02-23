@@ -15,32 +15,38 @@ export const Container = styled.div`
   margin-top: -40px;
 `
 
-export const Header = styled.h1`
+export const Header = styled.span`
   font-size: 50px;
   font-weight: 700;
 `
 
-export const ComingSoon = styled.button`
+const Button = styled.button`
   width: 40vw;
   max-width: 200px;
   height: 50px;
 
+  font-weight: 700;
+
   font-size: 20px;
+
+  margin: 25px;
 
   border-radius: 15px;
   border: none;
 
-  background-color: rgba(35, 137, 247, 1);
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+`
+
+export const ComingSoon = styled(Button)`
+  background-color: rgba(200, 200, 200, 1);
   color: white;
 
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(35,137,247,0.4); 
-  box-shadow: 0px 6px 20px 0px rgba(35,137,247,0.4);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 `
 
 export const Details = styled.div`
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
 
   flex-direction: row;
 
@@ -52,8 +58,11 @@ export const Details = styled.div`
   }
 `
 
-export const Phone = styled.img`
-  height: 65vh;
+export const Preview = styled.img`
+  height: auto;
+  max-height: 650px;
+  width: auto;
+  max-width: 90vw;
 `
 
 export const Description = styled.span`

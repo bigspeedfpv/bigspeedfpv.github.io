@@ -18,11 +18,16 @@ export const HeaderContainer = styled.div`
   top: 0px;
   z-index: 2;
   
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255);
 
   backdrop-filter: blur(6px);
 
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2)
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.05);
+
+  @supports (backdrop-filter: blur(6px)) {
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 `
 
 export const ProfileImage = styled.img`
