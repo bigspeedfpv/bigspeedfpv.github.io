@@ -20,6 +20,9 @@ export const Container = styled.div`
 export const Background = styled.img`
   min-height: 100%;
   min-width: 100%;
+  width: auto;
+
+  object-fit: cover;
 
   opacity: ${(props: { visible: boolean }) => props.visible ? `1` : `0`};
 
