@@ -15,7 +15,7 @@ module.exports = {
         background_color: `#f2187e`,
         theme_color: `#f2187e`,
         display: `minimal-ui`,
-        icon: `https://github.com/bigspeedfpv.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`
