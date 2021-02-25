@@ -12,10 +12,10 @@ module.exports = {
         name: `bigspeed`,
         short_name: `bigspeed`,
         start_url: `/`,
-        background_color: `#ff0000`,
-        theme_color: `#ff0000`,
+        background_color: `#f2187e`,
+        theme_color: `#f2187e`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        icon: `https://github.com/bigspeedfpv.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`
