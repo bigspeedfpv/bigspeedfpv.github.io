@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import "../pages/style.css"
 
 import { Bold404, Container404, Desc404, Link404, Title404 } from "../styles/404"
 
