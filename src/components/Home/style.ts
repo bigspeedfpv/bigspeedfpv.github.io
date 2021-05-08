@@ -30,7 +30,7 @@ export const BackgroundImage = styled.img`
   top: 0;
 
   opacity: ${(props: any) => props.loaded ? 100 : 0};
-  transition: opacity 1s;
+  transition: opacity 0.75s;
 `
 
 export const Profile = styled.img`
