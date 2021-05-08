@@ -8,13 +8,17 @@ const Home = ({ children }) => {
 
   const [loaded, setLoaded] = React.useState(false)
 
+  const bgImg = React.useRef()
 
+  React.useEffect(() => {
+    if ((bgImg.current as any).complete) setLoaded(true)
+  })
 
   return (
     <>
       <picture>
         <source type="image/webp" srcSet="background.webp" />
-        <BackgroundImage src="background.png" alt="Website Background" onLoad={() => setLoaded(true)} loaded={loaded} />
+        <BackgroundImage src="background.png" alt="Website Background" onLoad={() => setLoaded(true)} loaded={loaded} ref={bgImg} />
       </picture>
 
       <IntroContainer>
