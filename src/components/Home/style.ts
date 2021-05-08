@@ -30,7 +30,7 @@ export const BackgroundImage = styled.img`
   height: 100%;
   object-fit: cover;
 
-  filter: brightness(80%);
+  filter: brightness(75%);
 
   position: absolute;
   left: 0;
