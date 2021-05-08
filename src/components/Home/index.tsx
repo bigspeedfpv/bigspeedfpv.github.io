@@ -12,7 +12,7 @@ const Home = ({ children }) => {
 
   React.useEffect(() => {
     if ((bgImg.current as any).complete) setLoaded(true)
-  })
+  }, [])
 
   return (
     <>
