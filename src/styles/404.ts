@@ -35,7 +35,7 @@ export const Bold404 = styled.strong`
 
   border-bottom: 4px solid transparent;
 
-  border-image: linear-gradient(90deg, rgba(255,0,155,1) 0%, rgba(255,136,0,1) 100%);
+  border-image: linear-gradient(90deg, rgba(0,255,207,1) 0%, rgba(0,226,255,1) 100%);
   
   border-image-slice: 1;
 
@@ -50,8 +50,4 @@ export const Desc404 = styled.span`
   font-size: 30px;
 `
 
-export const Link404 = styled(Link)`
-  color: #ff4b33;
-
-
-`
+export const Link404 = styled(Link)``
