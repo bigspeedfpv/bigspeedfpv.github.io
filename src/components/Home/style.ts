@@ -1,8 +1,15 @@
 import styled, { css } from "styled-components"
 
+export const HomeContainer = styled.div`
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+`
+
 export const IntroContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   left: 0px;
   top: 0px;
   margin: 0;
@@ -20,7 +27,7 @@ export const IntroContainer = styled.div`
 
 export const BackgroundImage = styled.img`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 
   filter: brightness(80%);

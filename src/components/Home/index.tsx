@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { IntroContainer, BackgroundImage, Profile, Title } from "./style"
+import { IntroContainer, BackgroundImage, Profile, Title, HomeContainer } from "./style"
 
 const Home = ({ children }) => {
   const data = useStaticQuery(query)
@@ -15,7 +15,7 @@ const Home = ({ children }) => {
   }, [])
 
   return (
-    <>
+    <HomeContainer>
       <picture>
         <source type="image/webp" srcSet="background.webp" />
         <BackgroundImage src="background.png" alt="Website Background" onLoad={() => setLoaded(true)} loaded={loaded} ref={bgImg} />
@@ -27,7 +27,7 @@ const Home = ({ children }) => {
       </IntroContainer>
 
       { children }
-    </>
+    </HomeContainer>
   )
 }
 
