@@ -4,10 +4,11 @@ import React from 'react'
 import Background from '../components/Home/Background'
 import Name from '../components/Home/Name'
 import axios from 'axios'
+import { HomeContainer } from '../styles/Home'
 
 export default function Home() {
   return (
-    <>
+    <HomeContainer>
       <Head>
         <title>Home | bigspeed</title>
         <meta name="description" content="Homepage for bigspeed's projects and FPV." />
@@ -18,6 +19,6 @@ export default function Home() {
       <Background />
 
       <Name />
-    </>
+    </HomeContainer>
   )
 }
