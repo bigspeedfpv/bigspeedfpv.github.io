@@ -1,6 +1,5 @@
 // @ts-ignore
 import styled from "styled-components"
-import Image from "next/image"
 
 export const BackgroundContainer = styled.div`
   width: 100%;
@@ -15,7 +14,11 @@ export const BackgroundContainer = styled.div`
   left: 0;
 `
 
-export const BackgroundImage = styled(Image)`
+export const BackgroundImage = styled.img`
   filter: brightness(75%) blur(6px);
   transform: scale(1.1);
+
+  min-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
 `

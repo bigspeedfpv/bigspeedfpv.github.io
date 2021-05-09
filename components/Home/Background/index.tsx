@@ -5,10 +5,8 @@ const Background = () => {
   return (
     <BackgroundContainer>
       <BackgroundImage 
-        src={"/background.jpg"}
+        src={"/background.png"}
         alt={"Background"}
-        layout={"fill"}
-        objectFit={"cover"}
       />
     </BackgroundContainer>
   )
