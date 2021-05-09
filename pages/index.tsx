@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import { GetStaticProps } from "next"
 import React from 'react'
-import Background from '../components/Background'
+import Background from '../components/Home/Background'
+import Name from '../components/Home/Name'
+import axios from 'axios'
 
 export default function Home() {
   return (
@@ -13,6 +16,8 @@ export default function Home() {
       </Head>
 
       <Background />
+
+      <Name />
     </>
   )
 }
