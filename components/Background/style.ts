@@ -12,5 +12,6 @@ export const BackgroundContainer = styled.div`
 `
 
 export const BackgroundImage = styled(Image)`
-  
+  filter: brightness(75%) blur(6px);
+  transform: scale(1.1);
 `
