@@ -1,5 +1,6 @@
 // @ts-expect-error
 import styled from "styled-components"
+import Image from "next/image"
 
 export const BackgroundContainer = styled.div`
   width: 100%;
@@ -14,11 +15,10 @@ export const BackgroundContainer = styled.div`
   left: 0;
 `
 
-export const BackgroundImage = styled.img`
+export const BackgroundImage = styled(Image)`
   filter: brightness(75%) blur(6px);
   transform: scale(1.2);
 
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
+  opacity: ${(props: any) => props.visible ? 100 : 0};
+  transition: opacity 0.5s;
 `

@@ -1,19 +1,27 @@
 import React from "react"
 import { BackgroundContainer, BackgroundImage } from "./style"
 
-const Background = () => (
-  <BackgroundContainer>
-    <picture>
-      <source
-        type="image/webp"
-        srcSet="/background.webp"
-      />
+const Background = () => {
+  const [loaded, setLoaded] = React.useState(false)
+  
+  const handleLoad = (e: any) => {
+    if (e.target.srcset) {
+      setLoaded(true)
+    }
+  }
+
+  return (
+    <BackgroundContainer>
       <BackgroundImage
-        src="/background.png"
-        alt="Background"
+        src={"/background.png"}
+        alt={"Background"}
+        layout={"fill"}
+        objectFit={"cover"}
+        onLoad={handleLoad}
+        visible={loaded}
       />
-    </picture>
-  </BackgroundContainer>
-)
+    </BackgroundContainer>
+  )
+}
 
 export default Background
