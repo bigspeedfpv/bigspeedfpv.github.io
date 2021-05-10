@@ -5,13 +5,15 @@ import Name from "./Name"
 import { HomeContentContainer } from "./style"
 
 const HomeContent = (props: { logo: string }) => (
-  <HomeContentContainer>
-    <Name src={props.logo} />
+  <main id="main">
+    <HomeContentContainer>
+      <Name src={props.logo} />
     
-    <Divider />
+      <Divider />
 
-    <Menu />
-  </HomeContentContainer>
+      <Menu />
+    </HomeContentContainer>
+  </main>
 )
 
 export default HomeContent
