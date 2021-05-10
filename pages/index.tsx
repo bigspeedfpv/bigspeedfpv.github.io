@@ -2,8 +2,8 @@ import axios from "axios"
 import { GetStaticProps } from "next"
 import Head from "next/head"
 import React from "react"
-import Background from "../components/Home/Background"
-import Name from "../components/Home/Name"
+import HomeBackground from "../components/Home/Background"
+import HomeContent from "../components/Home/Content"
 import { HomeContainer } from "../styles/Home"
 
 const Home = (props: { b64: string }) => {
@@ -16,9 +16,9 @@ const Home = (props: { b64: string }) => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Background />
+      <HomeBackground />
 
-      <Name src={props.b64} />
+      <HomeContent logo={props.b64} />
     </HomeContainer>
   )
 }

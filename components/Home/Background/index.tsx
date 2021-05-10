@@ -1,7 +1,7 @@
 import React from "react"
 import { BackgroundContainer, BackgroundImage } from "./style"
 
-const Background = () => {
+const HomeBackground = () => {
   const [loaded, setLoaded] = React.useState(false)
   
   const handleLoad = (e: any) => {
@@ -18,10 +18,10 @@ const Background = () => {
         layout={"fill"}
         objectFit={"cover"}
         onLoad={handleLoad}
-        visible={loaded}
+        visibility={loaded ? 100 : 0}
       />
     </BackgroundContainer>
   )
 }
 
-export default Background
+export default HomeBackground
