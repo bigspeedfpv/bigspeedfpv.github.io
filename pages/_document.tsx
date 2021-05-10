@@ -1,6 +1,7 @@
-import Document, { DocumentContext } from "next/document"
 // @ts-expect-error
 import { ServerStyleSheet } from "styled-components"
+import Document, { DocumentContext, Head, Html, Main, NextScript } from "next/document"
+import React from "react"
 
 export default class MyDocument extends Document {
   static async getInitialProps (ctx: DocumentContext) {
@@ -27,5 +28,17 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }
