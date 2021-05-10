@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 import styled from "styled-components"
 
 export const BackgroundContainer = styled.div`
@@ -18,7 +18,7 @@ export const BackgroundImage = styled.img`
   filter: brightness(75%) blur(6px);
   transform: scale(1.1);
 
-  min-width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
   object-fit: cover;
 

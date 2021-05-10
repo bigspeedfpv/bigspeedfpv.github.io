@@ -1,12 +1,12 @@
-import Head from 'next/head'
+import axios from "axios"
 import { GetStaticProps } from "next"
-import React from 'react'
-import Background from '../components/Home/Background'
-import Name from '../components/Home/Name'
-import axios from 'axios'
-import { HomeContainer } from '../styles/Home'
+import Head from "next/head"
+import React from "react"
+import Background from "../components/Home/Background"
+import Name from "../components/Home/Name"
+import { HomeContainer } from "../styles/Home"
 
-export default function Home() {
+const Home = (props: { b64: string }) => {
   return (
     <HomeContainer>
       <Head>
@@ -18,7 +18,23 @@ export default function Home() {
 
       <Background />
 
-      <Name />
+      <Name src={props.b64} />
     </HomeContainer>
   )
+}
+
+export default Home
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const b64 = await axios
+    .get("https://github.com/bigspeedfpv.png", {
+      responseType: "arraybuffer"
+    })
+    .then((res: any) => Buffer.from(res.data, "binary").toString("base64"))
+
+  return {
+    props: {
+      b64: b64
+    }
+  }
 }

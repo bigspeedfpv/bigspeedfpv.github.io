@@ -12,13 +12,19 @@ const Background = () => {
 
   return (
     <BackgroundContainer>
-      <BackgroundImage 
-        src={"/background.png"}
-        alt={"Background"}
-        ref={bg}
-        onLoad={() => setLoaded(true)}
-        visible={loaded}
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcSet="/background.webp"
+        />
+        <BackgroundImage
+          src="/background.png"
+          alt="Background"
+          ref={bg}
+          onLoad={() => setLoaded(true)}
+          visible={loaded}
+        />
+      </picture>
     </BackgroundContainer>
   )
 }

@@ -1,7 +1,7 @@
 module.exports = {
-    images: {
-        domains: [
-            "github.com"
-        ]
-    }
+  images: {
+    domains: [
+      "github.com"
+    ]
+  }
 }
