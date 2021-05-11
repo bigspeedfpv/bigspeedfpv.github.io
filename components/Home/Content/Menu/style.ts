@@ -28,12 +28,14 @@ export const MenuItem = styled.a`
 
   transition: border-bottom 0.2s, font-weight 0.2s;
 
-  &::before {
-    display: block;
-    content: "${(props: any) => props.children}";
-    font-weight: 400;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+  @media (orientation: landscape) {
+    &::before {
+      display: block;
+      content: "${(props: any) => props.children}";
+      font-weight: 400;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
   }
 `

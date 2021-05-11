@@ -16,6 +16,6 @@ export const HomeContentContainer = styled.div`
 
   @media (orientation: portrait) {
     flex-direction: column;
-    gap: min(7.5vh, 75px);
+    gap: min(5vh, 50px);
   }
 `
