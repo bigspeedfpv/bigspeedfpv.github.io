@@ -32,4 +32,6 @@ export const BoldErrorText = styled(ErrorText)`
 export const Description = styled.span`
   text-align: center;
   font-size: min(45px, 4.5vmin);
+
+  max-width: 1000px;
 `
