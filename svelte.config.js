@@ -1,6 +1,7 @@
 import preprocess from "svelte-preprocess"
 import autoprefixer from "autoprefixer"
 import image from "svelte-image"
+import vercel from "@sveltejs/adapter-vercel"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,7 +16,8 @@ const config = {
 
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte"
+    target: "#svelte",
+    adapter: vercel()
   }
 }
 

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("./Inter.var.woff2") format("woff2");
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}

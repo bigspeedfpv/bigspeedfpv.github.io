@@ -13,6 +13,7 @@
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "autoprefixer": "^10.2.6",
+    "esbuild": "^0.12.8",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
@@ -27,5 +28,7 @@
     "typescript": "^4.0.0"
   },
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "@sveltejs/adapter-vercel": "^1.0.0-next.22"
+  }
 }
